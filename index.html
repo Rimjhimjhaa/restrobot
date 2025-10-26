@@ -52,18 +52,18 @@
 
 
     <script src="app.js"></script>
-    <script>
-        window.watsonAssistantChatOptions = {
-          integrationID: "b1fa1a58-226e-47df-ace7-a253c4310b46", // The ID of this integration.
-          region: "au-syd", // The region your integration is hosted in.
-          serviceInstanceID: "873d15c3-40c0-4258-8c74-f8202732c93b", // The ID of your service instance.
-          onLoad: async (instance) => { await instance.render(); }
-        };
-        setTimeout(function(){
-          const t=document.createElement('script');
-          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
-          document.head.appendChild(t);
-        });
-      </script>
+   <script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "0e6fe177-0dac-4855-ba36-6631d3040532", // The ID of this integration.
+    region: "us-south", // The region your integration is hosted in.
+    serviceInstanceID: "cea50454-9d79-4605-b7c6-991372737df7", // The ID of your service instance.
+    onLoad: async (instance) => { await instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
 </body>
 </html>
